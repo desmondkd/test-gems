@@ -21,7 +21,6 @@ class OvertimeController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request);
         $request->validate([
             'date' => 'required|date',
             'start_time' => 'required|date_format:Y-m-d\TH:i',
